@@ -1,0 +1,20 @@
+name: shopping_manager
+description: A Flutter application for managing shopping lists.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2
+  uuid: ^3.0.5
+  image_picker: ^0.8.4+8
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/default_profile.png
+
