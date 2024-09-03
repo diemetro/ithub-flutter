@@ -22,7 +22,7 @@ class WelcomeView extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Welcome'),
+        title: Text('Добро пожаловать!'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -35,7 +35,7 @@ class WelcomeView extends StatelessWidget {
             ),
             SizedBox(height: 20),
             Text(
-              'Вот примеры покупок, чтобы добавить ваши - нужно авторизоваться',
+              'Вот примеры покупок, но чтобы добавить ваши новые покупки - нужно авторизоваться',
               style: TextStyle(fontSize: 18),
               textAlign: TextAlign.center,
             ),

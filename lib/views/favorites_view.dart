@@ -21,7 +21,7 @@ class FavoritesView extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Favorites'),
+        title: Text('Избранное'),
       ),
       body: ListView.builder(
         itemCount: userFavorites.length,

@@ -37,14 +37,14 @@ class _LoginViewState extends State<LoginView> {
             TextField(
               controller: _emailController,
               decoration: InputDecoration(
-                labelText: 'Email',
+                labelText: 'Логин /Email/',
                 errorText: _errorMessage,
               ),
             ),
             TextField(
               controller: _passwordController,
               decoration: InputDecoration(
-                labelText: 'Password',
+                labelText: 'Пароль',
                 errorText: _errorMessage,
               ),
               obscureText: true,

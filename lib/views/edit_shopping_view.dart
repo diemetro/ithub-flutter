@@ -59,7 +59,7 @@ class _EditShoppingViewState extends State<EditShoppingView> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Edit Shopping List'),
+        title: Text('Редактировать список покупок'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -67,15 +67,15 @@ class _EditShoppingViewState extends State<EditShoppingView> {
           children: <Widget>[
             TextField(
               controller: _titleController,
-              decoration: InputDecoration(labelText: 'Title'),
+              decoration: InputDecoration(labelText: 'Название'),
             ),
             TextField(
               controller: _descriptionController,
-              decoration: InputDecoration(labelText: 'Description'),
+              decoration: InputDecoration(labelText: 'Описание'),
             ),
             TextField(
               controller: _notesController,
-              decoration: InputDecoration(labelText: 'Notes'),
+              decoration: InputDecoration(labelText: 'Заметки'),
             ),
             SizedBox(height: 20),
             _image != null
@@ -108,7 +108,7 @@ class _EditShoppingViewState extends State<EditShoppingView> {
                 shoppingListViewModel.updateShoppingList(updatedList);
                 Navigator.pop(context);
               },
-              child: Text('Update'),
+              child: Text('Обновить'),
             ),
           ],
         ),

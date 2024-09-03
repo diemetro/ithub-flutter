@@ -46,7 +46,7 @@ class _AddShoppingViewState extends State<AddShoppingView> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Add Shopping List'),
+        title: Text('Обновить список покупок'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -54,15 +54,15 @@ class _AddShoppingViewState extends State<AddShoppingView> {
           children: <Widget>[
             TextField(
               controller: _titleController,
-              decoration: InputDecoration(labelText: 'Title'),
+              decoration: InputDecoration(labelText: 'Название'),
             ),
             TextField(
               controller: _descriptionController,
-              decoration: InputDecoration(labelText: 'Description'),
+              decoration: InputDecoration(labelText: 'Описание'),
             ),
             TextField(
               controller: _notesController,
-              decoration: InputDecoration(labelText: 'Notes'),
+              decoration: InputDecoration(labelText: 'Заметки'),
             ),
             SizedBox(height: 20),
             _image != null
@@ -94,7 +94,7 @@ class _AddShoppingViewState extends State<AddShoppingView> {
                 shoppingListViewModel.addShoppingList(newList);
                 Navigator.pop(context);
               },
-              child: Text('Add'),
+              child: Text('Добавить'),
             ),
           ],
         ),

@@ -20,7 +20,7 @@ class ShoppingListView extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Shopping Lists'),
+        title: Text('Список покупок'),
       ),
       body: ListView.builder(
         itemCount: userShoppingLists.length,
