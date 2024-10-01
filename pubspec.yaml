@@ -12,9 +12,15 @@ dependencies:
   provider: ^6.1.2
   uuid: ^3.0.5
   image_picker: ^0.8.4+8
+  flutter_launcher_icons: ^0.13.1
 
 flutter:
   uses-material-design: true
   assets:
     - assets/default_profile.png
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
 
