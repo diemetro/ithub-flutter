@@ -8,7 +8,7 @@ class SettingsView extends StatelessWidget {
         title: Text('Настройки'),
       ),
       body: Center(
-        child: Text('Settings content goes here.'),
+        child: Text('Это экран настроек приложения.'),
       ),
     );
   }

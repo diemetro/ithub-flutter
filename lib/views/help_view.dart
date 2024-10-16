@@ -8,7 +8,7 @@ class HelpView extends StatelessWidget {
         title: Text('Помощь'),
       ),
       body: Center(
-        child: Text('Help content goes here.'),
+        child: Text('Это экран помощи.'),
       ),
     );
   }

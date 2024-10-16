@@ -83,6 +83,18 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Text('Менеджер покупок'),
         actions: [
           IconButton(
+            icon: Icon(Icons.settings),
+            onPressed: () {
+              Navigator.pushNamed(context, '/settings');
+            },
+          ),
+          IconButton(
+            icon: Icon(Icons.help),
+            onPressed: () {
+              Navigator.pushNamed(context, '/help');
+            },
+          ),
+          IconButton(
             icon: Icon(Icons.logout),
             onPressed: () {
               Provider.of<AuthViewModel>(context, listen: false).logout();
@@ -91,26 +103,44 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
+
       body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.list),
+            icon: Icon(Icons.list, size: 30),
             label: 'Список покупок',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.star),
+            icon: Icon(Icons.star, size: 30),
             label: 'Избранное',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Профиль',
+            icon: Icon(Icons.person, size: 30),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings, size: 30),
+            label: 'Настройки',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.help, size: 30),
+            label: 'Помощь',
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blue,
+        selectedItemColor: Colors.blueAccent,
+        unselectedItemColor: Colors.grey,
+        selectedLabelStyle: TextStyle(
+          fontSize: 14,
+          fontWeight: FontWeight.bold,
+        ),
+        unselectedLabelStyle: TextStyle(
+          fontSize: 12,
+        ),
+        iconSize: 30,
         onTap: _onItemTapped,
       ),
+
       floatingActionButton: _selectedIndex == 0
           ? FloatingActionButton(
               onPressed: () {
