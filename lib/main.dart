@@ -117,6 +117,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person, size: 30),
+            label: 'Профиль',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings, size: 30),
